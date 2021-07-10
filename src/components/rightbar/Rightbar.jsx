@@ -26,7 +26,7 @@ export default function Rightbar({ profile }) {
   const ProfileRightbar = () => {
     return (
       <>
-        <h4 className="rightbarTitle">User information</h4>
+        <h4 className="rightbarTitle">My info</h4>
         <div className="rightbarInfo">
           <div className="rightbarInfoItem">
             <span className="rightbarInfoKey">City:</span>
@@ -38,7 +38,9 @@ export default function Rightbar({ profile }) {
           </div>
           <div className="rightbarInfoItem">
             <span className="rightbarInfoKey">Hobbies:</span>
-            <span className="rightbarInfoValue">movies, fast cars, live music</span>
+            <span className="rightbarInfoValue">
+              movies, fast cars, live music
+            </span>
           </div>
         </div>
         <h4 className="rightbarTitle">Friends</h4>

@@ -25,15 +25,26 @@
   margin: 0;
   list-style: none;
 }
-
+/* ======================== */
 .sidebarListItem {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  cursor: pointer;
 }
-
+/* ================================= */
 .sidebarIcon {
   margin-right: 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  background: rgb(49, 49, 49);
+  padding: 0.2rem;
+}
+.sidebarIcon:hover {
+  background: red;
+}
+.sidebarIcon:active {
+  transform: scale(1.2);
 }
 
 .sidebarButton {
@@ -53,5 +64,23 @@
   margin: 0;
   list-style: none;
 }
+.sidebarListItemText {
+  position: relative;
+  font-weight: 500;
+}
+.sidebarListItemText::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  left: 50%;
+  background: red;
+  height: 5%;
+  top: 110%;
+  transition: all 0.5s;
+}
 
-
+.sidebarListItemText:hover::before {
+  width: 100%;
+  left: 0%;
+  transition: all 0.5s;
+}

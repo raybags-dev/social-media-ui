@@ -14,7 +14,13 @@ export default function Profile() {
           <div className="profileRightTop">
             <div className="profileCover">
               <video
-                className="profileCoverMovie" autoPlay={true}loop src="videos/var-vid2.mp4"
+                className="profileCoverMovie"
+                type="video/mp4"
+                autoPlay={true}
+                allow="autoplay"
+                loop
+                muted
+                src="videos/var-vid2.mp4"
               />
               <img
                 className="profileUserImg"
@@ -23,13 +29,13 @@ export default function Profile() {
               />
             </div>
             <div className="profileInfo">
-                <h4 className="profileInfoName">Ray Baguma</h4>
-                <span className="profileInfoDesc">Let the games begin</span>
+              <h4 className="profileInfoName">Ray Baguma</h4>
+              <span className="profileInfoDesc">Let the games begin</span>
             </div>
           </div>
           <div className="profileRightBottom">
             <Feed />
-            <Rightbar profile/>
+            <Rightbar profile />
           </div>
         </div>
       </div>
