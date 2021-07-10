@@ -1,6 +1,7 @@
 .topbarContainer {
   display: flex;
   align-items: center;
+  position: -webkit-sticky;
   position: sticky;
   height: 50px;
   width: 100%;
@@ -72,6 +73,30 @@
   outline: none;
   transition: 0.5s;
 }
+.searchInput:focus::-webkit-input-placeholder {
+  opacity: 0;
+  letter-spacing: 3rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.searchInput:focus::-moz-placeholder {
+  opacity: 0;
+  letter-spacing: 3rem;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+.searchInput:focus:-ms-input-placeholder {
+  opacity: 0;
+  letter-spacing: 3rem;
+  -ms-transition: 0.5s;
+  transition: 0.5s;
+}
+.searchInput:focus::-ms-input-placeholder {
+  opacity: 0;
+  letter-spacing: 3rem;
+  -ms-transition: 0.5s;
+  transition: 0.5s;
+}
 .searchInput:focus::placeholder {
   opacity: 0;
   letter-spacing: 3rem;
@@ -79,6 +104,34 @@
 }
 .searchInput:focus-within {
   text-align: center;
+}
+.searchInput::-webkit-input-placeholder {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-style: italic;
+}
+.searchInput::-moz-placeholder {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+  font-style: italic;
+}
+.searchInput:-ms-input-placeholder {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  -ms-transition: 0.5s;
+  transition: 0.5s;
+  font-style: italic;
+}
+.searchInput::-ms-input-placeholder {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  -ms-transition: 0.5s;
+  transition: 0.5s;
+  font-style: italic;
 }
 .searchInput::placeholder {
   text-align: center;
@@ -148,7 +201,8 @@
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   cursor: pointer;
   border: 5px solid rgb(77, 73, 73);
 

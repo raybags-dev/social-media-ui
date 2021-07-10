@@ -15,14 +15,16 @@
 .profileCoverMovie {
   width: 100%;
   height: 250px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .profileUserImg {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: absolute;
   left: 0;
   right: 0;
